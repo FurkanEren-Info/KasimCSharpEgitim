@@ -131,7 +131,17 @@ namespace Konu08SiniflarClasses
             {
                  Console.WriteLine("marka: " + marka.Name);
             }
-            
+            var urun = new Urun()
+            {
+                Id = 2,
+                Marka = marka,
+                Name = "Abra 18 Notebook",
+                Description = "Game pc",
+                Price = 49900,
+            };
+            Console.WriteLine("ürün Detayı:");
+            Console.WriteLine(urun.Marka.Name + " " + urun.Name);
+            Console.WriteLine("Fiyat: " + urun.Price + " TL");
         }
     }
 
